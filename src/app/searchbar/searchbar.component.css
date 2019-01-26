@@ -1,0 +1,14 @@
+input {
+  width: max-content;
+  border: none;
+  height: 7vh;
+  width: -webkit-fill-available;
+  padding-left: 4vh;
+}
+
+::ng-deep .mat-form-field-infix {
+  width: 100% !important;
+}
+mat-form-field {
+  width: -webkit-fill-available;
+}

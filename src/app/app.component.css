@@ -1,0 +1,10 @@
+
+body {
+  font-family: 'Ubuntu', sans-serif !important;
+  background-color: #794B43	;
+
+}
+app-searchbar {
+  display: flex;
+  justify-content: center;
+}

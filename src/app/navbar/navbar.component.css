@@ -1,0 +1,6 @@
+::ng-deep .navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+.navbar-brand {
+  padding-left: 2vh;
+}

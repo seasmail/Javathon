@@ -1,0 +1,53 @@
+:host body {
+  font-family: Ubuntu, sans-serif;
+}
+
+mat-card {
+  height: 19vh;
+  background-color: #1F615A		;
+  color: white;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  margin-bottom: 2px;
+}
+
+.mat-card-avatar {
+  width: inherit;
+}
+mat-card-header {
+  font-size: 3vh;
+}
+mat-card-content {
+  display: flex;
+  justify-content: end;
+  margin-left: 2vh;
+}
+
+.name {
+  font-size: 22px;
+  color: #5ED0BD;
+}
+.mat-button {
+  background-color: transparent;
+}
+.circle {
+  background-color: white;
+  border-radius: 50%;
+  height: 5vh;
+  width: 5vh;
+  display: block;
+  margin-top: 5vh;
+}
+
+.content {
+  align-self: center;
+  font-size: 3vh;
+}
+
+.image {
+  width: 18vh;
+  margin: 3vh 0 0;
+  display: flex;
+  height: inherit;
+}
+
