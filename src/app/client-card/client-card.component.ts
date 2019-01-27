@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {ClientService} from '../client.service';
 
 @Component({
   selector: 'app-client-card',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./client-card.component.css']
 })
 export class ClientCardComponent implements OnInit {
+  @Input() client;
+  bonus: number;
 
-  constructor() { }
+  constructor(public clientService: ClientService) { }
 
   ngOnInit() {
+    this.clientService.getClientBonus(1, 2)
+      .subscribe( data => {
+        this.bonus = data;
+      });
+  }
+
+  public onSubmit() {
+    this.clientService.increaseBonus('1111', 'coffy').subscribe(data => this.bonus = data);
   }
 
 }

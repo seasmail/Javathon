@@ -20,11 +20,11 @@
     <div mat-card-avatar class="example-header-image">
       <img src="../../assets/images/cofee1.png" alt="coffee">
     </div>
-    <mat-card-subtitle>Company name</mat-card-subtitle>
+    <mat-card-subtitle>{{company.name}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <p>
-      You need 2 more cups!
+      You need {{company.maxBonus}} more cups to get a free one!
     </p>
   </mat-card-content>
 </mat-card>

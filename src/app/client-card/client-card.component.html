@@ -16,15 +16,15 @@
 
 <mat-card>
   <mat-card-header>
-    <mat-card-subtitle>Client name</mat-card-subtitle>
+    <mat-card-subtitle>{{client.name}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <p>
-      Phone:
+      Phone: {{client.phoneNumber}}
       <br>
-      Bonus:
+      Bonus: {{bonus.value}}
     </p>
 
-    <button mat-button><mat-icon>add</mat-icon></button>
+    <button mat-button (click)="onSubmit()"><mat-icon>add</mat-icon></button>
   </mat-card-content>
 </mat-card>

@@ -20,6 +20,8 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
 import {NgMatSearchBarModule} from 'ng-mat-search-bar';
 import { ClientCardComponent } from './client-card/client-card.component';
 import { CompaniesComponent } from './companies/companies.component';
+import {CompanyService} from './company.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,8 +30,8 @@ import { CompaniesComponent } from './companies/companies.component';
     NavbarComponent,
     ClientsComponent,
     SearchbarComponent,
+    CompaniesComponent,
     ClientCardComponent,
-    CompaniesComponent
   ],
   imports: [
     AlertModule.forRoot(),
@@ -45,8 +47,9 @@ import { CompaniesComponent } from './companies/companies.component';
     MatCheckboxModule,
     MatFormFieldModule,
     NgMatSearchBarModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [CompanyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
